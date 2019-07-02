@@ -8,14 +8,14 @@
         Title="โปรแกรมคำนวณราคาตารางเมตร" Width="297.175" Height="264.275" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="109*"/>
-            <ColumnDefinition Width="96*"/>
-            <ColumnDefinition Width="86*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="57" Margin="10,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="36" FontFamily="Leelawadee UI Semilight" Grid.ColumnSpan="2"/>
-        <Button x:Name="button" Content="X 100" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button1" Content="X 400" HorizontalAlignment="Left" Margin="107,142,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"/>
-        <Button x:Name="button2" Content="X 500" HorizontalAlignment="Left" Margin="94.665,142,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button x:Name="button" Content="X 100" HorizontalAlignment="Left" Margin="66,142,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" IsHitTestVisible="False"/>
+        <Button x:Name="button1" Content="X 400" HorizontalAlignment="Left" Margin="42.067,142,0,0" VerticalAlignment="Top" Width="53" Grid.Column="1"/>
+        <Button x:Name="button2" Content="X 500" HorizontalAlignment="Left" Margin="0.2,142,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
         <Label x:Name="label" Content="" HorizontalAlignment="Center" Margin="11,168,11,7" VerticalAlignment="Center" Height="60" Width="269" FontSize="20" Grid.ColumnSpan="3"/>
         <Label x:Name="label1" Content="กว้าง" HorizontalAlignment="Left" Margin="47,36,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label x:Name="label2" Content="ยาว" HorizontalAlignment="Left" Margin="84.665,38,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2" Grid.Column="1"/>
@@ -24,6 +24,9 @@
         <RadioButton x:Name="radioButton1" Content="เมตร" HorizontalAlignment="Left" Margin="52.665,16,0,0" VerticalAlignment="Top" GroupName="type" Grid.Column="1"/>
         <Label x:Name="label3" Content="ข้อมูลที่จะกรอง" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="25"/>
         <Button x:Name="button3" Content="ล้าง" HorizontalAlignment="Left" Margin="4,13,0,0" VerticalAlignment="Top" Width="71" Grid.Column="2"/>
+        <Button x:Name="button4" Content="X ___" HorizontalAlignment="Left" Margin="11,142,0,0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="textBox2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="20" Margin="66,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Visibility="Hidden"/>
+        <Button x:Name="button5" Grid.ColumnSpan="2" Content="ตกลง" Grid.Column="1" HorizontalAlignment="Left" Margin="102.267,142,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
 
     </Grid>
 </Window>

@@ -43,4 +43,12 @@ Class MainWindow
                 e.Cancel = True
         End Select
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As RoutedEventArgs) Handles button4.Click
+        button.Visibility = Visibility.Hidden
+        button1.Visibility = Visibility.Hidden
+        button2.Visibility = Visibility.Hidden
+        textBox2.Visibility = Visibility.Visible
+        button5.Visibility = Visibility.Visible
+    End Sub
 End Class
