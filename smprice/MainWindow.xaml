@@ -5,28 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:smprice"
         mc:Ignorable="d"
-        Title="โปรแกรมคำนวณราคาตารางเมตร" Width="297.175" Height="264.275" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="โปรแกรมคำนวณราคาตารางเมตร" Width="747.825" Height="518.275" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="57" Margin="10,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="36" FontFamily="Leelawadee UI Semilight" Grid.ColumnSpan="2"/>
-        <Button x:Name="button" Content="X 100" HorizontalAlignment="Left" Margin="66,142,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" IsHitTestVisible="False"/>
-        <Button x:Name="button1" Content="X 400" HorizontalAlignment="Left" Margin="42.067,142,0,0" VerticalAlignment="Top" Width="53" Grid.Column="1"/>
-        <Button x:Name="button2" Content="X 500" HorizontalAlignment="Left" Margin="0.2,142,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
-        <Label x:Name="label" Content="" HorizontalAlignment="Center" Margin="11,168,11,7" VerticalAlignment="Center" Height="60" Width="269" FontSize="20" Grid.ColumnSpan="3"/>
-        <Label x:Name="label1" Content="กว้าง" HorizontalAlignment="Left" Margin="47,36,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label x:Name="label2" Content="ยาว" HorizontalAlignment="Left" Margin="84.665,38,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Center" Height="57" Margin="45.665,77,12,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" FontSize="36" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <RadioButton x:Name="radioButton" Content="เซนติเมตร" HorizontalAlignment="Left" Margin="92,16,0,0" VerticalAlignment="Top" GroupName="type" IsChecked="True" Grid.ColumnSpan="2"/>
-        <RadioButton x:Name="radioButton1" Content="เมตร" HorizontalAlignment="Left" Margin="52.665,16,0,0" VerticalAlignment="Top" GroupName="type" Grid.Column="1"/>
-        <Label x:Name="label3" Content="ข้อมูลที่จะกรอง" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="25"/>
-        <Button x:Name="button3" Content="ล้าง" HorizontalAlignment="Left" Margin="4,13,0,0" VerticalAlignment="Top" Width="71" Grid.Column="2"/>
-        <Button x:Name="button4" Content="X ___" HorizontalAlignment="Left" Margin="11,142,0,0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="57" Margin="37,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" FontSize="24" FontFamily="Leelawadee UI Semilight" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Center" Margin="58,239,-146,190" VerticalAlignment="Center" Height="60" Width="269" FontSize="24" Grid.Column="2"/>
+        <Label x:Name="label1" Content="กว้าง" HorizontalAlignment="Left" Margin="67,64,0,0" VerticalAlignment="Top" FontSize="24" Grid.Column="2"/>
+        <Label x:Name="label2" Content="ยาว" HorizontalAlignment="Left" Margin="264,64,-129,0" VerticalAlignment="Top" FontSize="24" Grid.Column="2"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Center" Height="57" Margin="222,105,-270,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" FontSize="24" Grid.Column="2"/>
+        <RadioButton x:Name="radioButton" Content="เซนติเมตร" HorizontalAlignment="Left" Margin="147,28,-82,0" VerticalAlignment="Top" GroupName="type" IsChecked="True" Grid.Column="2" FontSize="24"/>
+        <RadioButton x:Name="radioButton1" Content="เมตร" HorizontalAlignment="Left" Margin="264,26,-151,0" VerticalAlignment="Top" GroupName="type" Grid.Column="2" FontSize="24"/>
+        <Label x:Name="label3" Content="ข้อมูลที่จะกรอก" HorizontalAlignment="Left" Margin="37,18,0,0" VerticalAlignment="Top" Height="36" Grid.Column="1" FontSize="24" Grid.ColumnSpan="2"/>
+        <Button x:Name="button3" Content="ล้างข้อมูล" HorizontalAlignment="Left" Margin="352,23,-272,0" VerticalAlignment="Top" Width="100" Grid.Column="2" FontSize="24"/>
         <TextBox x:Name="textBox2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="20" Margin="66,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Visibility="Hidden"/>
         <Button x:Name="button5" Grid.ColumnSpan="2" Content="ตกลง" Grid.Column="1" HorizontalAlignment="Left" Margin="102.267,142,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
+        <RadioButton x:Name="radioButton2" Content="นิ้ว" HorizontalAlignment="Left" Margin="98,32,0,0" VerticalAlignment="Top" GroupName="type" Grid.Column="2" FontSize="24"/>
+        <Label Content="ราคา" HorizontalAlignment="Left" Margin="46,182,0,0" VerticalAlignment="Top" Grid.Column="2" FontSize="24"/>
+        <TextBox x:Name="price" HorizontalAlignment="Left" Height="42" Margin="107,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2" FontSize="24"/>
+        <Label Content="บาท" Grid.Column="2" HorizontalAlignment="Left" Margin="232,182,-115,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button Content="ยืนยัน" Grid.Column="2" HorizontalAlignment="Left" Margin="292,185,-211,0" VerticalAlignment="Top" Width="76" Click="Button_Click" FontSize="24"/>
+        <Label Content="รับเงินมา" Grid.Column="2" HorizontalAlignment="Left" Margin="0,305,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="remo" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="93,309,-94,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" FontSize="24"/>
+        <Label Content="บาท" Grid.Column="2" HorizontalAlignment="Left" Margin="286,310,-143,0" VerticalAlignment="Top" Width="92" FontSize="24"/>
+        <Label x:Name="labelresu" Content="" Grid.Column="2" HorizontalAlignment="Left" Margin="10,372,-90,0" VerticalAlignment="Top" Height="82" Width="317" FontSize="24"/>
 
     </Grid>
 </Window>
