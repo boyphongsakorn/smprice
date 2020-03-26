@@ -6,6 +6,8 @@ Class MainWindow
         textBox.Text = ""
         textBox1.Text = ""
         label.Content = ""
+        price.Text = ""
+        labelresu.Content = ""
     End Sub
 
     Private Sub MainWindow_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
@@ -38,7 +40,10 @@ Class MainWindow
 
     Private Sub remo_KeyDown(sender As Object, e As KeyEventArgs) Handles remo.KeyDown
         If e.Key = Key.Enter Then
-            labelresu.Content = Val(remo.Text) - pricebath
+            labelresu.Content = "เงินทอน ("
+            labelresu.Content += CStr(Val(remo.Text) - pricebath)
+            labelresu.Content += ") บาท"
+
         End If
     End Sub
 End Class
